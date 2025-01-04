@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - HashemAgencia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <img id="imgLogo" src="./assets/img/logo.webp" alt="Logo Hashem de alquiler de coches">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container my-5">
+            <h2 class="text-center mb-4">Contáctanos</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="nombre" class="bi bi-person form-label"></label>
+                            <input type="text" class="form-control text-white" id="nombre" name="nombre" placeholder="Nombre" required minlength="3" maxlength="40" pattern="[A-Za-zÁáÉéÍíÓóÚúÑñ\s]+">
+                        </div>
+                        <div class="mb-3">
+                            <label for="apellidos" class="bi bi-person form-label"></label>
+                            <input type="text" class="form-control text-white" id="apellidos" name="apellidos" placeholder="Apellidos" required minlength="4" maxlength="60" pattern="[A-Za-zÁáÉéÍíÓóÚúÑñ\s]+">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="bi bi-envelope form-label"></label>
+                            <input type="email" class="form-control text-white" placeholder="Correo electrónico" id="email" name="email" autocomplete="off" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="bi bi-telephone form-label"></label>
+                            <input type="tel" class="form-control text-white" id="telefono" placeholder="Teléfono" name="telefono" required pattern="[0-9]{9}" minlength="9" maxlength="9">
+                        </div>
+                        <div class="mb-3">
+                            <label for="comentarios" class="bi bi-chat-text form-label"></label>
+                            <textarea class="form-control text-white" id="comentarios" name="comentarios" placeholder="Comentarios" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="reset" class="btn btn-secondary">Eliminado</button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <div class="map-container">
+                        <div id="map"></div>
+                        <br>
+                        <button id="showRouteBtn" class="btn btn-primary mt-3">Mostrar ruta</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <img id="imgFooter" src="./assets/img/logo.webp" alt="Logo Hashem de alquiler de coches">
+                    <h5>Información de la Empresa</h5>
+                    <p>Hashem Alquiler de Coches: alquiler accesible y personalizado para tu viaje ideal.</p>
+                    <a href="#">Aviso Legal</a>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="social-icons col-md-4">
+                    <h5>Síguenos</h5>
+                    <a href="https://facebook.com" target="_blank" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
+
