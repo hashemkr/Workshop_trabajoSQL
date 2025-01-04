@@ -54,9 +54,9 @@ https://hashemkr.github.io/Workshop_trabajoSQL/
 - **`index.html`**: Página principal.
 - **`galeria.html`**: Página secundaria con la galería.
 - **`contacto.html`**: Página secundaria con el formulario de contacto.
-- **`/css/`**: Archivos CSS personalizados.
-- **`/js/`**: Archivos JavaScript adicionales.
-- **`/img/`**: Carpeta de imágenes utilizadas en el proyecto.
+- **`assets/css/`**: Archivos CSS personalizados.
+- **`assets/js/`**: Archivos JavaScript adicionales.
+- **`assets/img/`**: Carpeta de imágenes utilizadas en el proyecto.
 
 ---
 
